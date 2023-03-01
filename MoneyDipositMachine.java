@@ -6,29 +6,29 @@ class  MoneyDipositMachine
 		Scanner scan=new Scanner(System.in);
 		System.out.println("Hello! Welcome to Money Deposit Machine");
 		int status;
-		    int pin=1432;
-			long phNo=9542754321L;
-			long accNo=36129668123L;
-			double balance=14320.50;
-			System.out.println(" Select Any Language : \n 1. English \n 2. Other");
-			int lang=scan.nextInt();
+		int pin=1432;
+		long phNo=9542754321L;
+		long accNo=36129668123L;
+		double balance=14320.50;
+		System.out.println(" Select Any Language : \n 1. English \n 2. Other");
+		int lang=scan.nextInt();
 		do	
 		{
-		    System.out.println(" 1 . Card Transaction");
-		    System.out.println(" 2 . Cardless Transaction");
+			System.out.println(" 1 . Card Transaction");
+			System.out.println(" 2 . Cardless Transaction");
 			System.out.println(" Enter Any Option to Continue");
 			int option=scan.nextInt();
-		    switch(option)
+		    	switch(option)
 			{
-                case 1:
+               			case 1:
 				switch(1)
 				{
-				   case 1:System.out.println(" Please Insert Your Card \n Enter Your PIN");
-				   int password=scan.nextInt();
-				   if(password==pin)
+				   	case 1:System.out.println(" Please Insert Your Card \n Enter Your PIN");
+				   	int password=scan.nextInt();
+				   	if(password==pin)
 					{
-					   byte b1 = 0;
-                        while(b1 == 0)
+					  	byte b1 = 0;
+                        		  	while(b1 == 0)
 						{
 							System.out.println(" Hello! Naveen Ganji, Welcome to ATM Centre. \n 1. Withdraw Money\n 2. Deposit Money\n 3. Balance Enquire\n 4. Transfer Money\n 5. PIN Change");
 							int option1=scan.nextInt();
@@ -62,7 +62,7 @@ class  MoneyDipositMachine
 							System.out.println("Enter 0 for continue and 1 for exit");
 							b1 = scan.nextByte();
 						}
-				    }
+				    	}
 					else
 					{
 					    System.err.println(" You are Entered Incorrect PIN, Please Enter Valid PIN");
